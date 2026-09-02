@@ -14,7 +14,7 @@ Instead of squinting at coordinates or fighting the vanilla compass, NaviCraft d
 ## Features
 
 - **`/gps navi <x> <y> <z>`** — Set an active navigation target (optional dimension override)
-- **`/gps marker <x> <y> <z> <name>`** — Save a named waypoint (supports `~ ~ ~` relative coordinates)
+- **`/gps marker <x> <y> <z> <name> [--portal]`** — Save a named waypoint (supports `~ ~ ~` relative coordinates); `--portal` marks it as a dimension portal for cross-dimension routing
 - **`/gps goto <name>`** — Navigate to a saved waypoint, with tab-completion
 - **`/gps list`** — List all saved waypoints
 - **`/gps remove <name>`** — Delete a waypoint
@@ -75,12 +75,11 @@ Waypoints and active navigation are saved per-player and persist across sessions
 ## Roadmap
 
 - [ ] Road-following pathfinding (tagged path blocks or terrain A*) as a `PathProvider` swap-in
-- [ ] Nearest-portal selection when multiple portal markers exist per dimension
 - [ ] Client-configurable arrow style/texture
 
 ## License
 
-TBD
+[MIT](LICENSE)
 
 ## Author
 
