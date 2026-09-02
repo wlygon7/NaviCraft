@@ -1,0 +1,15 @@
+{
+    "schemaVersion": 1,
+    "id": "navicraft-test",
+    "version": "1.0.0",
+    "name": "NaviCraft Client Gametests",
+    "environment": "*",
+    "entrypoints": {
+        "fabric-client-gametest": [
+            "com.wlygon.navicraft.gametest.NaviCraftGameTest"
+        ]
+    },
+    "depends": {
+        "navicraft": "*"
+    }
+}

@@ -1,0 +1,36 @@
+{
+    "schemaVersion": 1,
+    "id": "navicraft",
+    "version": "${version}",
+    "name": "NaviCraft",
+    "description": "Forza-style GPS navigation: set a destination and follow a trail of animated arrows.",
+    "authors": ["Wilson Ligon"],
+    "contact": {
+        "homepage": "https://navicraft.lygonms.com",
+        "sources": "https://navicraft.lygonms.com"
+    },
+    "license": "MIT",
+    "icon": "assets/navicraft/icon.png",
+    "environment": "*",
+    "entrypoints": {
+        "main": [
+            "com.wlygon.navicraft.NaviCraft"
+        ],
+        "client": [
+            "com.wlygon.navicraft.client.NaviCraftClient"
+        ]
+    },
+    "mixins": [
+        "navicraft.mixins.json",
+        {
+            "config": "navicraft.client.mixins.json",
+            "environment": "client"
+        }
+    ],
+    "depends": {
+        "fabricloader": ">=0.19.5",
+        "minecraft": "~26.2",
+        "java": ">=25",
+        "fabric-api": "*"
+    }
+}
